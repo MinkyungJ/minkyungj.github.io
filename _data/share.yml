@@ -4,11 +4,11 @@
 platforms:
   - type: gitHub
     icon: "fab fa-github"
-    link: "https://github.com/MinkyungJ"
+    link: "https://github.com/"
 
   - type: instagram
     icon: "fab fa-instagram"
-    link: "https://www.instagram.com/jomim_ky/"
+    link: "https://www.instagram.com/"
 
   # Uncomment below if you need to.
   #
