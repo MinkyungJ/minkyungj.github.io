@@ -1,7 +1,7 @@
 ---
 title: Deploy Strategy
 tags: [DevOps, Deploy Strategy, Zero-downtime Deployment]
-date: 2023-07-24 18:00 +0800
+date: 2023-07-24 18:00 +0900
 categories: [DevOps, Zero-downtime Deployment]
 toc: true
 ---
