@@ -83,7 +83,7 @@ WAN 비용을 최적화하기 위해 고객은 AWS Transit Gateway Region 간 �
 
 ---
 
-## 블로깅을 마치며
+## 📔 블로깅을 마치며
 Data Center에서 실행하는 애플리케이션을 AWS로 마이그레이션하고 AWS Global Network를 사용하여 Wan Architecture 설계와 비용적인 측면 모두 최적화 할 수 있다는 것을 배웠습니다. 또한, TGW 지역 간의 Peering 기능을 통해 비용 최적화 및 글로벌 확장의 촉진 및 온프레미스 / AWS 워크로드 모두 접근할 수 있는 Architecture를 설계할 수 있다는 것을 배웠습니다. 다음에는 AWS의 보안 환경 구축에 대해 공부해볼 생각이다.
 
 ---
