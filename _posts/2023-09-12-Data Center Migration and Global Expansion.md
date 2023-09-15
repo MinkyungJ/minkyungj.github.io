@@ -46,12 +46,10 @@ AWS Global Backbone Architecture을 활용하면 AWS와 On-prmise Hosting Applic
 
 ### AWS Global Backbone 활용 예시
 > 예시에 대한 자세한 설명은 AWS Blog에 자세하게 설명되어있습니다. 해당 글 하단의 Reference에 있습니다.
-
 1. 고객 사이트를 상호 연결하는 Global Wan
 한국의 한 기업이 자사의 핵심 시스템을 호스팅하는 중앙 Data Center을 보유하고있고, 이 회사는 인도에서 호스팅하는데 필요한 Application을 실행하기 위해 뭄바이에 공간을 임대했습니다. 고객은 Global Wan을 통해 뭄바이 Data Center에서 실행되는 여러 Application과 한국에서 실행되는 Application의 핵심 시스템에 접근합니다.
 
 ![Global_Wan](https://github.com/MinkyungJ/MinkyungJ.github.io/blob/main/_posts/Global_Wan.png?raw=true)*고객 사이트를 상호연결하는 Global Wan을 갖춘 초기 Architecture*
-
 2. AWS Global Network을 통한 Application Access
 고객은 뭄바이의 Data Center에서 AWS Mumbai Region으로 Application을 마이그레이션합니다. 인도에 있는 고객은 Application은 물론 한국 Data Center에서 실행되는 핵심 시스템에도 접근해야합니다.
 > 💡 AWS Mumbai Region으로 연결할 때, 사용하는 설정 방식
@@ -69,7 +67,6 @@ WAN 비용을 최적화하기 위해 고객은 AWS Transit Gateway Region 간 �
 - Transit Gateway 피어링을 사용하면 대륙간 통신이 가능합니다.
 
 ![Application_Access](https://github.com/MinkyungJ/MinkyungJ.github.io/blob/main/_posts/Application_Access.png?raw=true)*AWS Global Network를 통해 고객 사이트에서 AWS Region 및 온프레미스 Application 접근*
-
 3. Global Expansion with AWS Global Network
 고객이 해외로 확장함에 따라서 새로운 해외 사무소에서 AWS Global Network를 통해 다른 고객 사이트 또는 AWS Region까지 접근할 수 있게됩니다.
 - 대역폭 요구 사항에 따라 고객은 AWS DX를 사용하여 가장 가까운 AWS Region으로 이동하고 TGW Region 간 피어링을 활용할 수 있습니다.
