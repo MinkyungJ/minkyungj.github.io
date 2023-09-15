@@ -74,6 +74,18 @@ WAN 비용을 최적화하기 위해 고객은 AWS Transit Gateway Region 간 �
 
 ![Global_Expansion](https://github.com/MinkyungJ/MinkyungJ.github.io/blob/main/_posts/Global_Expansion.png?raw=true)*AWS Global Network를 통해 고객 사이트에서 AWS Region 및 온프레미스 Application 접근*
 
+#### 💡 Architecture 채택 시, 고려할 점
+1. TGW 연결, VPN / DX 연결 : 고정된 시간 당 비용 발생
+2. TGW, AWS OUT 및 리전을 통과하는 트래픽에 따라 달라지는 사용량 기반 구성 요소 존재
+3. 실제로 제공하는 업체에서는 고정된 모델 가격으로 네트워크를 제공하는 경우가 많음
+
+> 따라서 동일한 Region에서 사이트 수가 많은 고객의 경우, 해당 지역 Wan 설정을 고려하는 것이 좋고, 위의 활용 예시와 같이 국제 연결이 필요할 때에는 AWS Global Network를 사용하는 것이 좋습니다.
+
+---
+
+## 블로깅을 마치며
+Data Center에서 실행하는 애플리케이션을 AWS로 마이그레이션하고 AWS Global Network를 사용하여 Wan Architecture 설계와 비용적인 측면 모두 최적화 할 수 있다는 것을 배웠습니다. 또한, TGW 지역 간의 Peering 기능을 통해 비용 최적화 및 글로벌 확장의 촉진 및 온프레미스 / AWS 워크로드 모두 접근할 수 있는 Architecture를 설계할 수 있다는 것을 배웠습니다. 다음에는 AWS의 보안 환경 구축에 대해 공부해볼 생각이다.
+
 ---
 
 ## ❗️ Reference
