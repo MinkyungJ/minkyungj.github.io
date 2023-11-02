@@ -2,7 +2,7 @@
 title: Building a self-service security environment
 tags: [AWS, Network Infra, Secure Environment]
 date: 2023-09-19 22:00 +0900
-categories: [AWS, Infra, Secure Environment]
+categories: [AWS, AWS Infra]
 toc: true
 ---
 

@@ -2,7 +2,7 @@
 title: AWS Global Backbone for Data Center Migration and Global Expansion
 tags: [AWS, Network Infra, Architecture, AWS Direct Connect]
 date: 2023-09-12 15:00 +0900
-categories: [AWS, Infra, Architecture]
+categories: [AWS, AWS Infra]
 toc: true
 ---
 
