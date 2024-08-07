@@ -4,5 +4,5 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> 언젠간 작성하겠지..?
+> SAA 자격증 공부..(진행중)
 {: .prompt-tip }
