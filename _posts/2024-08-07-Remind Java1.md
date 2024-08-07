@@ -6,7 +6,7 @@ categories: [Java, Inflearn]
 toc: true
 ---
 
-## ❗️ Operating Java Program
+## 자바 프로그램 실행
 
 
 **Hello Java**
@@ -48,7 +48,7 @@ System.out.println("hello java");
 ## ❗️ Java의 컴파일과 실행
 
 자바 프로그램은 **컴파일, 실행 단계**를 거친다.
-- [자바 소스 코드](#Hello-Java) 와 같은 코드는 개발자가 작성.
+- [자바 소스 코드](#자바-프로그램-실행)와 같은 코드는 개발자가 작성.
 - 자바 컴파일러를 사용하여 소스 코드 **컴파일**
   - 자바가 제공하는 **javac** 프로그램 사용
   - .java -> .class 파일 생성됨
