@@ -25,7 +25,9 @@ public class Var1 {
 > 패키지란, 간단하게 자바 파일을 구분하기 위한 폴더이다.
 
 [패키지 예시](#Var1)를 만들었다면, 해당 패키지에 들어가는 자바 파일 첫줄에 " package variable; " 와 같이 소속된 패키지를 선언해주어야한다.
-  - 자바 파일이 위치하는 패키지와, "package variable" 선언 위치가 같아야한다.
+
+- 자바 파일이 위치하는 패키지와, "package variable" 선언 위치가 같아야한다.
+
 ```실행결과
 10
 10
@@ -67,9 +69,7 @@ public class Var3 {
 
 > a의 값에 따라서 출력 값의 결과가 모두 변경되는 점을 확인할 수 있다.
 
-
 ---
-
 
 ## 변수 선언
 
@@ -99,9 +99,10 @@ public class Var4 {
   }
 }
 ```
- > 결과로 보면 알 수 있듯이, 변수의 값을 변경하면 변수에 들어가있던 기존의 값은 삭제된다.
 
- ---
+> 결과로 보면 알 수 있듯이, 변수의 값을 변경하면 변수에 들어가있던 기존의 값은 삭제된다.
+
+---
 
 ## 변수 선언과 초기화
 
@@ -120,7 +121,7 @@ public class Var5 {
     int c,d;
   }
 }
- ```
+```
 
 > 변수는 a,b와 같이 하나씩 선언할 수도 있고, c,d와 같이 한번에 여러 변수를 선언할 수도 있다.
 
@@ -143,8 +144,8 @@ public class Var6 {
     System.out.println(b);
 
     int c = 3, int d = 4; // 여러 변수 선언과 초기화 한번에
-    System.out.println(c); 
-    System.out.println(d); 
+    System.out.println(c);
+    System.out.println(d);
   }
 }
 ```
@@ -161,7 +162,7 @@ package variable;
 public class Var7 {
   public static void main(String[] args) {
     int a;
-    System.out.println(a); 
+    System.out.println(a);
   }
 };
 
@@ -170,6 +171,7 @@ java : variable a might not have been initialized
 ```
 
 위 자바 코드를 실행하면 다음과 같은 컴파일 에러가 발생한다. 이는 변수가 초기화되지 않았다는 오류다.
+
 > 메모리는 여러 시스템이 함께 사용하는 공간으로 계속해서 값들이 저장된다.
 > 변수를 선언하면 메모리상의 어떤 공간을 차지하고 사용하기 때문에 해당 공간에 기존에 어떤 값이 들어있었는지 알 수가 없다.
 > 따라서 변수를 초기화하지 않으면 이상한 값이 출력된다.
@@ -208,21 +210,22 @@ public class Var8 {
 ```
 
 > **변수** : 데이터를 다루는 형태에 따라 타입(type)이라는 다양한 형식이 존재하며, 각 변수는 지정된 타입에 맞는 값을 사용해야함
+>
 > - int : 정수를 다룸
 > - double : 실수를 다룸
 > - boolean : true, false 값만 사용 가능하며 참 거짓 판단
 > - char : 문자 하나를 다룰 때 사용 (''를 사용하여 감싸야 함)
 > - String : 문자열을 다룸 (""를 사용해야함)
 
-
 ---
 
 ### 리터럴
-[코드](#변수_타입)와 같이 개발자가 직접 적은 100, 10.5와 같은 고정된 값을 리터럴(literal)이라고 한다.
+
+[코드](#변수-타입)와 같이 개발자가 직접 적은 100, 10.5와 같은 고정된 값을 리터럴(literal)이라고 한다.
+
 > 정수 리터럴, 실수 리터럴, 불리언 리터럴, ...
 
 **변수의 값은 변할 수 있지만, 리터럴은 개발자가 직접 입력한 고정 값이므로 변하지 않는다.**
-
 
 ---
 
@@ -233,7 +236,7 @@ package variable;
 
 public class Var9 {
   public static void main(String[] args) {
-    byte b = 127;  
+    byte b = 127;
     short s = 32767;
     int i = 21454545;
 
@@ -251,16 +254,19 @@ public class Var9 {
 ### 표현할 수 있는 숫자의 범위와 차지하는 메모리의 공간
 
 **정수형**
+
 - byte : -127 ~ 127 (1byte, 2^{8})
 - short : 2byte, 2^{16}
-- int :  4byte, 2^{32}
+- int : 4byte, 2^{32}
 - long : 8byte, 2^{64}
 
 **실수형**
+
 - float : 대략 7자리 정밀도 (4byte, 2^{32})
 - double : 대략 15자리 정밀도 (8byte, 2^{64})
 
 **기타**
+
 - boolean : true, false (1byte)
 - char : 문자 하나 (1byte)
 - String : 문자열 (길이에 따라 달라짐)
@@ -268,6 +274,7 @@ public class Var9 {
 ---
 
 ### 리터럴 타입 지정
+
 - 정수 리터럴은 int를 기본으로 함
   - 20억을 넘어가면 long으로 변경해야함
 - 실수 리터럴은 double을 기본으로 함
@@ -286,6 +293,7 @@ public class Var9 {
 
 **관례**
 소문자로 시작하는 낙타 표기법
+
 - 변수 이름은 소문자로 시작하는 것이 일반적.
   - EX> orderDetail, myAccount, ...
 
